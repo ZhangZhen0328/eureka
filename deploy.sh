@@ -25,7 +25,7 @@ rm -f $TOMCAT_APP_PATH/webapps/eureka.jar
 cp $PROJ_PATH/eureka/target/eureka.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
-mv order.war ROOT.war
+mv eureka.war ROOT.war
 
 # 启动tomcat
 cd $TOMCAT_APP_PATH/
