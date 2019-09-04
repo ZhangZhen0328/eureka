@@ -2,11 +2,11 @@
 
 
 killeureka(){
-    pid=`ps -ef|grep eureka.jar|grep java|awk '${print $2}'`
+    pid=`ps -ef|grep eureka.jar|grep java|awk '{print $2}'`
     echo "eureka Id list :$pid"
     if [ "$pid" = "" ]
     then
-        echo "no tomcat pid alive"
+        echo "no eureka pid alive"
     else
         kill -9 $pid
     fi
