@@ -6,7 +6,7 @@ eureka:
   server:
     enable-self-preservation: false   #检查 只能在开发环境关闭   生产环境要打开
 server:
-  port: 8761
+  port: 8090
 spring:
   application:
     name: eureka
