@@ -19,10 +19,10 @@ killtomcat
 # 删除原有工程
 rm -rf $TOMCAT_APP_PATH/webapps/ROOT
 rm -f $TOMCAT_APP_PATH/webapps/ROOT.jar
-rm -f $TOMCAT_APP_PATH/webapps/order.jar
+rm -f $TOMCAT_APP_PATH/webapps/eureka.jar
 
 # 复制新的工程
-cp $PROJ_PATH/eureka/target/order.war $TOMCAT_APP_PATH/webapps/
+cp $PROJ_PATH/eureka/target/eureka.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
 mv order.war ROOT.war
